@@ -347,6 +347,7 @@ An X server running on Windows is required for running Linux GUI apps on Windows
 #### WSL-Specific Development Tools
 
 - [ghc](https://launchpad.net/~hvr/+archive/ubuntu/ghc-wsl) - A version of the Glasgow Haskell Compiler built and optimized for WSL and hosted in a PPA for Debian and Ubuntu-based WSL distros.
+- [claude-code-wsl2-setup](https://github.com/congmnguyen/claude-code-wsl2-setup) - Documentation and scripts that fix Claude Code (Anthropic's CLI) papercuts on WSL2 + Windows Terminal: screenshot paste via Windows clipboard polling, balloon-tip notifications gated on foreground window, LSP plugin wiring, voice mode via ALSA → PulseAudio → WSLg, and more. ![github project][githublogo]
 
 #### Miscellaneous Tools
 
