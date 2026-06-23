@@ -320,6 +320,7 @@ An X server running on Windows is required for running Linux GUI apps on Windows
 - [WSL GUI Tool](https://github.com/emeric-martineau/wsl-gui-tool) - A graphical tool to manage (run, stop, import, export...) WSL. ![github project][githublogo]
 - [WSL Distro Manager](https://github.com/bostrot/wsl2-distro-manager) - GUI to manage, copy, distribute WSL distros. ![github project][githublogo]
 - [WSL UI](https://github.com/octasoft-ltd/wsl-ui) - A lightweight desktop application for managing WSL distributions built with Tauri. ![github project][githublogo]
+- [WSL Dashboard](https://github.com/owu/wsl-dashboard) - A modern, lightweight GUI dashboard for managing WSL distributions. ![github project][githublogo]
 
 #### WSL Utilities
 
