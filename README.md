@@ -311,6 +311,7 @@ An X server running on Windows is required for running Linux GUI apps on Windows
 - [Fluent Terminal](https://github.com/felixse/FluentTerminal) - A Terminal Emulator based on UWP and web technologies.
 - [KKTerm](https://github.com/ryantsai/KKTerm) - A Windows-first, local-first terminal for managing connections, sessions, and workspaces.
 - [Yaw](https://yaw.sh) - A cross-platform terminal that auto-detects WSL along with PowerShell, CMD, and Git Bash on Windows.
+- [AbsoluteTelnet/SSH](https://www.celestialsoftware.net/absolutetelnet/) - Windows SSH, SFTP, Telnet, and serial terminal client with tabbed sessions, Unicode support, and smart-card/certificate authentication.
 
 #### For Managing WSL Installations
 
