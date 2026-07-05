@@ -11,12 +11,13 @@ An Awesome collection of Windows Subsystem for Linux (WSL) information, distribu
   - [3. Windows](#3-windows)
   - [4. WSL1](#4-wsl1)
   - [5. WSL2](#5-wsl2)
-  - [6. Emulation](#6-emulation)
-  - [7. Details](#7-details)
-  - [8. Installation](#8-installation)
-  - [9. Use Cases](#9-use-cases)
-  - [10. GUI Apps](#10-gui-apps)
-  - [11. Systemd](#11-systemd)
+  - [6. WSLC](#6-wslc)
+  - [7. Emulation](#7-emulation)
+  - [8. Details](#8-details)
+  - [9. Installation](#9-installation)
+  - [10. Use Cases](#10-use-cases)
+  - [11. GUI Apps](#11-gui-apps)
+  - [12. Systemd](#12-systemd)
 - [Using WSL](#using-wsl)
     - [The WSL Shell](#the-wsl-shell)
     - [Programming on WSL](#programming-on-wsl)
@@ -74,11 +75,17 @@ WSL2 was announced at Microsoft Build 2019. WSL2 features a Linux kernel running
 - [The new Windows subsystem for Linux architecture: a deep dive](https://www.youtube.com/watch?v=lwhMThePdIo) - WSL2 presentation at Microsoft Build 2019
 - [WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel) - The source for the Linux kernel used in Windows Subsystem for Linux 2. 
 
-### 6. Emulation
+### 6. WSLC
+
+WSL Containers (WSLC) refers to container workflows and tooling built around WSL-backed Linux environments, with session-aware management for images, containers, networking, and related operations.
+
+- [WSL Container is now available for public preview](https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/) - Microsoft announcement and preview details for WSL Containers.
+
+### 7. Emulation
 
 Windows Subsystem for Linux is not an emulator or virtualizer like [VirtualBox](https://www.virtualbox.org). WSL1 is closer in its approach to [Wine](https://www.winehq.org) which is a compatibility layer to run Windows binaries on Linux by re-implementing Windows system and API calls in libraries.
 
-### 7. Details
+### 8. Details
 
 You want the gritty details? Here they are:
 
@@ -92,23 +99,23 @@ You want the gritty details? Here they are:
 - [Windows Subsystem for Linux - Update](https://www.youtube.com/watch?v=PP_T_m0UV9E) from Microsoft Developer YouTube channel. 
 - [Windows for Linux Nerds](https://blog.jessfraz.com/post/windows-for-linux-nerds/) from Microsoft developer Jessie Frazelle.
 
-### 8. Installation
+### 9. Installation
 
 - [WSL1 Installation Guide](https://docs.microsoft.com/en-us/windows/wsl/install) - Microsoft's official guide for WSL.
 - [Windows Server Installation Guide](https://docs.microsoft.com/en-us/windows/wsl/install-on-server) - Microsoft's official guide for Windows Server.
 - [Windows-Subsystem-For-Linux-Setup](https://github.com/michaeltreat/Windows-Subsystem-For-Linux-Setup) - A basic guide for how to get setup with the WSL feature that is included with Windows 10. ![github project][githublogo]
 
-### 9. Use Cases
+### 10. Use Cases
 
 WSL is undoubtedly a tool for power-users, developers, and *NIX/Linux geeks who want to run Windows. Most of the things you can do with WSL are going to be related to programming, the console, sysadmin, automation, AI/data science, and other geeky things.
 
-### 10. GUI Apps
+### 11. GUI Apps
 
 Yes, a [suprising number](https://github.com/ethanhs/WSL-Programs) of Linux GUI apps can run on WSL. GUI applications are officially supported on WSL2 with Windows Insider Preview since Windows 10 Insider Preview build 21286. It will also be available in Windows 10's fall 2021 release, and Windows 11. The GUI capabilities of WSL2 are informally referred to as WSLg.
 
 If you have an earlier release of Windows 10, then running a GUI app on WSL requires an operational X server on Windows. This must be downloaded, installed, and running for your GUI app to open from WSL; or it will complain that it cannot find a display. X servers for Windows include [X410](https://apps.microsoft.com/store/detail/x410/9NLP712ZMN9Q) 💰 (very highly recommended), [VcXsrv](https://sourceforge.net/projects/vcxsrv/), [GWSL](https://www.microsoft.com/store/apps/9NL6KD1H33V3), or [Xming](https://sourceforge.net/projects/xming/) on Windows 10.
 
-## 11. Systemd
+## 12. Systemd
 
 On September 21<sup>st</sup> 2022, Microsoft announced<sup><strong>[1]</strong></sup> official support for `systemd` in WSL2 disributions. As of version 0.67.6 of WSL2, you can now enable booting with systemd in WSL, enabling support for services and applications like snap.
 <br>
@@ -347,6 +354,8 @@ An X server running on Windows is required for running Linux GUI apps on Windows
 - [wsl-vpnkit](https://github.com/sakai135/wsl-vpnkit) - Script providing network connectivity to WSL 2 when blocked by VPN. ![github project][githublogo]
 - [xdg-open-wsl](https://github.com/cpbotha/xdg-open-wsl) - xdg-open replacement for WSL that opens files and links using Windows applications. ![github project][githublogo]
 - [gowinbridge](https://github.com/Sibikrish3000/gowinbridge) - A Go library and CLI for executing Windows binaries from WSL. ![github project][githublogo]
+- [Porthole](https://github.com/celloza/porthole) - A native Windows desktop dashboard for WSL Containers with tray-hosted backend operations. ![github project][githublogo]
+
 #### WSL-Specific Development Tools
 
 - [ghc](https://launchpad.net/~hvr/+archive/ubuntu/ghc-wsl) - A version of the Glasgow Haskell Compiler built and optimized for WSL and hosted in a PPA for Debian and Ubuntu-based WSL distros.
